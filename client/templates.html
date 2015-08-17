@@ -1,0 +1,43 @@
+<template name="userFeedbackForm">
+  {{#unless submitted}}
+    {{#autoForm collection="UserFeedback" id="userFeedbackForm" type="insert"}}
+      {{> afQuickField name='description'}}
+      <button type="submit" class="btn btn-primary">Submit</button>
+    {{/autoForm}}
+  {{else}}
+    Thank you for you're feedback.
+  {{/unless}}
+</template>
+
+<template name="userFeedbackBtn">
+  <button id="user-feedback-btn" href="/feedback_url/" class="btn btn-default">
+    Feedback
+  </button>
+</template>
+
+<template name="userFeedbackModal">
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          {{> userFeedbackForm}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<template name="userFeedbackAdmin">
+  <div class="list-group">
+    {{#each feedback}}
+      <div class="list-group-item">
+        <p>
+          {{#each splitOnNewlines description}}
+            {{this}}<br>
+          {{/each}}
+        </p>
+      </div>
+    {{/each}}
+  </div>
+</template>

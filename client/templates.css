@@ -1,0 +1,10 @@
+#user-feedback-btn { 
+  position: fixed; 
+  width: 100px;
+  right: -35px;
+  top: 40%; 
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
+  -o-transform: rotate(-90deg); 
+}
