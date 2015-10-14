@@ -20,9 +20,9 @@ Package.on_use(function (api) {
     'ongoworks:security@1.2.0',
     'dburles:collection-helpers@1.0.3',
     'zimme:collection-timestampable@1.0.6',
-    'aldeed:collection2',
-    'aldeed:simple-schema',
-    'aldeed:autoform',
+    'aldeed:collection2@2.5.0',
+    'aldeed:simple-schema@1.3.3',
+    'aldeed:autoform@5.7.1',
     'peppelg:bootstrap-3-modal@1.0.3',
     'yagni:split-on-newlines@0.0.5'
   ]);
