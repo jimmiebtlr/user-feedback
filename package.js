@@ -1,8 +1,8 @@
 Package.describe({
-    name: "elevatedevdesign:user-feedback",
-    summary: "User feedback made simple.",
-  	version: "0.0.1-rc.1",
-    git: "https://github.com/ElevateDev/meteor-user-feedback.git"
+  name: "jimmiebtlr:user-feedback",
+  summary: "User feedback made simple.",
+  version: "0.0.1",
+  git: "https://github.com/ElevateDev/meteor-user-feedback.git"
 });
 
 Package.on_use(function (api) {
